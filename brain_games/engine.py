@@ -1,14 +1,17 @@
+from brain_games.scripts.brain_games import main
+from brain_games.cli import welcome_user
 import prompt
 ROUNDS = 3
 
 
 def starting_the_game(game):
-    question, answer = game.checking_for_even()
+    main()
+    name = f'{welcome_user()}'
+    answer, question, rules_game = game.checking_for_even()
+    print(rules_game)
     series_of_correct_answers = 0
-    name = prompt.string("May I have your name? ")
-    print('Welcome to the Brain Games!')
-    print(f'Hello, {name}.')
     while series_of_correct_answers < ROUNDS:
+        answer, question, rules_game = game.checking_for_even()
         print(f'Question: {question}')
         entered_response = prompt.string("Your answer: ")
         if entered_response == answer:
