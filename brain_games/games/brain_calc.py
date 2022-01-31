@@ -1,8 +1,8 @@
 import random
 
 
-rules_game = 'What is the result of the expression?'
 def calc():
+    rules_game = 'What is the result of the expression?'
     operators = ['-', '+', '*']
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
@@ -14,4 +14,4 @@ def calc():
         answer = num1 + num2
     else:
         answer = num1 * num2
-    return [answer, question]
+    return answer, question, rules_game

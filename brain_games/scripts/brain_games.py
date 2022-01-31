@@ -7,10 +7,8 @@ def welcome():
 
 def main():
     welcome()
-    name = welcome_user()
-    return name
+    welcome_user()
 
-print(name)
 
 if __name__ == '__main__':
     main()
