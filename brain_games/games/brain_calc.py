@@ -1,17 +1,20 @@
 import random
 
 
-def calc():
-    rules_game = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
+
+
+def get_question_and_answer():
+
     operators = ['-', '+', '*']
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     operator = random.choice(operators)
-    question = '{} {} {} = '.format(num_1, operator, num_2)
+    question = '{} {} {}'.format(num1, operator, num2)
     if operator == '-':
-        answer = num1 - num2
+        answer = str(num1 - num2)
     elif operator == '+':
-        answer = num1 + num2
+        answer = str(num1 + num2)
     else:
-        answer = num1 * num2
-    return answer, question, rules_game
+        answer = str(num1 * num2)
+    return answer, question
