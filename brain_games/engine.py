@@ -3,7 +3,7 @@ ROUNDS = 3
 
 
 def starting_the_game(game):
-    print(f'Welcome to the Brain Games!')
+    print('Welcome to the Brain Games!')
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}.')
     print(game.DESCRIPTION)
@@ -12,8 +12,9 @@ def starting_the_game(game):
         print(f'Question: {question}')
         entered_response = prompt.string('Your answer: ')
         if entered_response != answer:
-            print(f'"{entered_response}" is wrong answer ;(. Correct answer was "{answer}".')
-            print(f'Let's try again, {name}!')
+            print(f'"{entered_response}" is wrong answer ;(. '
+                  f'Correct answer was "{answer}".')
+            print(f"Let's try again, {name}!")
             return
         print('Correct!')
     print(f'Congratulations, {name}!')
