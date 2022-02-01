@@ -10,10 +10,10 @@ def starting_the_game(game):
     for _ in range(ROUNDS):
         answer, question = game.get_question_and_answer()
         print(f'Question: {question}')
-        entered_response = prompt.string("Your answer: ")
+        entered_response = prompt.string('Your answer: ')
         if entered_response != answer:
             print(f'"{entered_response}" is wrong answer ;(. Correct answer was "{answer}".')
-            print(f"Let's try again, {name}!")
+            print(f'Let's try again, {name}!')
             return
         print('Correct!')
     print(f'Congratulations, {name}!')
