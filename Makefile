@@ -4,7 +4,7 @@ install:
 brain-even:
 	poetry run brain-even
 
-brain-calc:
+brain-calcc:
 	poetry run brain-calc
 
 brain-gcd:
