@@ -1,11 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Programming Language :: Python :: 3.10, License :: Aladdin Free Public License (AFPL)"
 authors = ["IvanPyGit <93933140+IvanPyGit@users.noreply.github.com>"]
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/IvanPyGit/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.10"
