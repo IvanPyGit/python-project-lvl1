@@ -9,7 +9,7 @@ packages = [
 repository = "https://github.com/IvanPyGit/python-project-lvl1"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8,<4.0"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
