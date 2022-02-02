@@ -10,7 +10,7 @@ def get_question_and_answer():
     step = random.randint(1, 10)
     ap = list(range(start, stop, step)[:20])
     length = len(ap)
-    hidden_element = random.randint(1, length)
+    hidden_element = random.randint(1, length - 1)
     answer = str(ap[hidden_element])
     ap[hidden_element] = '..'
     question = ' '.join(map(str, ap))
