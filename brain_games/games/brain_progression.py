@@ -6,7 +6,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 def get_question_and_answer():
     start = random.randint(1, 30)
-    stop = random.randint(60, 100)
+    stop = random.randint(80, 150)
     step = random.randint(1, 10)
     ap = list(range(start, stop, step)[:20])
     length = len(ap)
