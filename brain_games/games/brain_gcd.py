@@ -1,5 +1,5 @@
 import random
-
+import math
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
@@ -13,7 +13,5 @@ def get_question_and_answer():
 
 
 def gcd(num1, num2):
-    for i in range(1, (max(num1, num2) + 1)):
-        if((num1 % i == 0) and (num2 % i == 0)):
-            answer = str(i)
-            return answer
+    answer = str(math.gcd(num1, num2))
+    return answer
