@@ -2,13 +2,13 @@ import random
 
 
 DESCRIPTION = 'What number is missing in the progression?'
-
+LENGTH_PROGRESSION = 20 + 1
 
 def get_question_and_answer():
     start = random.randint(1, 30)
-    stop = random.randint(80, 150)
     step = random.randint(1, 10)
-    ap = list(range(start, stop, step)[:20])
+    stop = start + step * LENGTH_PROGRESSION
+    ap = list(range(start, stop, step))
     length = len(ap)
     hidden_element = random.randint(1, length - 1)
     answer = str(ap[hidden_element])
